@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+        }
+        form 
+        {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            padding: 15px;
+            background-color: aquamarine;
+            margin-top: 5%;
+        }
+        input[type="text"]
+        {
+            width: 350px;
+            height: auto;
+            padding: 6px;
+        }
+        
+        input[type="password"]
+        {
+            width: 350px;
+            height: auto;
+            padding: 6px;
+            color: red;
+        }
+
+        .navbar 
+        {
+            width: 100%;
+            height: auto;
+            background-color: black;
+            padding: 8px 15px;
+        }
+        .navbar-brand 
+        {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+        .navbar ul 
+        {
+            margin-left: 30%;
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .navbar a 
+        {
+            color: white;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .navbar a:visited
+        {
+            color: green; 
+        }
+        .navbar a:hover 
+        {
+         color: red; 
+        } 
+        .navbar a:active 
+        {
+            color: yellow;
+        } 
+        .navbar a:link 
+        {
+            color: blue;
+            
+        } 
+
+        #content 
+        {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            padding: 5px;
+            margin-top: 5%;
+            display: flex;
+
+        }
+
+        .box1,.box2,.box3,.box4,.box5,.box6 
+        {
+            width: 25%;
+            height: auto;
+            margin: 5px;
+            padding: 25px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="" class="navbar-brand">Flipkart App</a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <form>
+        <input type="text" name="name" placeholder="name *">
+        <br><br>
+        <input type="password" name="password" placeholder="Password *">
+    </form>
+    
+
+    <section id="content">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+    </section>
+</body>
+</html>

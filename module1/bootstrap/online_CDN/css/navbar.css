@@ -1,0 +1,42 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.navbar 
+{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.nav-link
+{
+    margin-left: 10%;
+}
+.nav-link li 
+{
+    display: inline-block;
+    padding: 5px 20px;
+}
+.nav-link a 
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+    .navbar-brand
+    {
+        padding: 5px;
+    }
+    .nav-link li 
+    {
+        display: block;
+    }
+    
+}
