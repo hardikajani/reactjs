@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function chng()
+        {
+            var fnm=document.getElementById("fname");
+            fnm.value=fnm.value.toUpperCase();
+
+            var lnm=document.getElementById("lname");
+            lnm.value=lnm.value.toUpperCase();
+
+            var em=document.getElementById("email");
+            em.value=em.value.toUpperCase();
+
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Register Form</h1>
+    <form name="frm" action="welcome.html" onsubmit="return valid(this.value)">
+
+        <input type="text" name="fname" id="fname" placeholder="FirstName *" onblur="chng()">
+        <br><br>
+        <input type="text" name="lname" id="lname" placeholder="LastName *" onblur="chng()">
+        <br><br>
+        <input type="text" name="email" id="email" placeholder="Email *" >
+        <br><br>
+        <button type="submit">Register now</button>
+
+    </form>
+    
+</body>
+</html>

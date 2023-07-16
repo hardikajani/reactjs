@@ -1,0 +1,16 @@
+@import url('font-face.css');
+body 
+{
+    background-color: antiquewhite;
+}
+h1 
+{
+    color: red;
+    font-size: 38px;
+}
+iframe
+{
+    width: 350px;
+    height: 350px;
+    border: solid 5px red;
+}
