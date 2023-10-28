@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<style type="text/css">
+			.box {
+				width: 200px;
+				height: 200px;
+				border: 1px solid black;
+				float: left;
+				margin: 20px 0px 0px 20px;
+				padding: 20px 0px 0px 0px;
+				box-sizing: border-box;
+				text-align: center;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// fot any tag name, Id , class name in '' than . event 
+				$('#show').click(function(){
+					$('#text').show();
+				});
+
+				$('.hide').click(function(){
+					$('#text').hide();
+				});
+
+				$('#btnToggle').click(function(){
+					$('#textToggle').toggle();
+				});
+			})
+		</script>
+
+	</head>
+	<body>
+		
+		<div class="box">
+			<button id="show">Show</button>
+			<button class="hide">Hide</button>
+			<p id="text" style="display: none;">Hello word</p>
+		</div>
+		<div class="box">
+			<button id="btnToggle">Toggle</button>
+			<p id="textToggle" style="display: none;">Hello word</p>
+		</div>
+	</body>
+</html>

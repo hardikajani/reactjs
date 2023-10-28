@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fade</title>
+	<style type="text/css">
+		.box{
+			width: 250px;
+			height: 300px;
+			border: 1px solid black;
+			margin-left: 20px;
+			float: left;
+			text-align: center;
+		}
+		.img { 
+			width: 200px; 
+			height: 200px;
+		}
+	</style>
+	<script type="text/javascript" src="../jquery-3.6.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.btnFadeIn').click(function(){
+				$('.FadeIn').fadeIn('slow');
+			});
+			$('.btnFadeOut').click(function(){
+				$('.FadeOut').fadeOut('fast');				
+			});
+			$('.btnFadeToggle').click(function(){
+				$('.FadeToggle').fadeToggle(1500);				
+			});
+			$('.btnFadeTo').click(function(){
+				//set timing and oppacity in fadeTo
+				$('.FadeTo').fadeTo(1000, 0.5);				
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="box">
+		<button class="btnFadeIn">FadeIn</button>
+		<img src="img/home.webp" class="img FadeIn" style="display: none;">	
+	</div>
+	<div class="box">
+		<button class="btnFadeOut">FadeOut</button>
+		<img src="img/home.webp" class="img FadeOut">	
+	</div>
+	<div class="box">
+		<button class="btnFadeToggle">FadeToggle</button>
+		<img src="img/home.webp" class="img FadeToggle">	
+	</div>
+	<div class="box">
+		<button class="btnFadeTo">FadeTo</button>
+		<img src="img/home.webp" class="img FadeTo">	
+	</div>
+</body>
+</html>

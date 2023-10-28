@@ -1,0 +1,92 @@
+body {
+	
+	font-family: sans-serif;
+}
+.logo {
+	margin-top: 30px;
+	margin-left: 50px;
+	float: left;
+}
+.logo img {
+	max-width: 180px;
+}
+.navbarLinks {
+	width: auto;
+	float: left;
+	margin: 10px 0px 0px 50px;
+
+}
+ul {
+    list-style-type: none;
+}
+.navbarLinks li {
+	margin: 0px 0px 0px 20px;
+	width: auto;
+	height: 45px;
+	padding: 10px 10px 0px 10px;
+	box-sizing: border-box;
+	float: left;
+	cursor: pointer;
+	font-size: 17px;
+    color: #000;
+    font-weight: 600;
+}
+.navbarLinks li:hover {
+	background-color: #f6f6f6;
+	border-radius: 4px;
+}
+
+.box {
+	width: 220px;
+	height: 200px;
+	border: 1px solid #f6f6f6;
+	border-radius: 5px;
+	margin: 15px 0px 0px -10px;
+	box-shadow: 7px 7px #f6f6f6;
+	font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    position: absolute;
+    padding-top: 7px;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+}
+
+.paymentLink {
+	width: 209px;
+	padding: 10px 0px 10px 10px;
+	text-decoration: none;
+	font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    float: left;
+    position: relative;
+}
+.paymentLink img {
+	width: 15px;
+	height: 15px;
+	float: right;
+	margin-right: 7px;
+}
+.paymentLink:hover {
+	background-color: #f6f6f6;
+	border-radius: 4px;
+}
+.box2 {
+	width: 220px;
+	height: 200px;
+	border: 1px solid #f6f6f6;
+	border-radius: 5px;
+	margin: 15px 0px 0px 210px;
+	box-shadow: 7px 7px #f6f6f6;
+	font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    position: absolute;
+    padding-top: 7px;
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+}
+

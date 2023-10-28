@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script  src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+          $("#btn").click(function(){
+
+            $("#load_here").load("data.txt");
+          })    
+             
+        });
+    </script>
+    
+</head>
+<body>
+    
+    <p id="demo">Load your ajax here</p>
+    <p id="load_here"></p>   
+    <button type="button" id="btn">Load ajax >></button>
+</body>
+</html>

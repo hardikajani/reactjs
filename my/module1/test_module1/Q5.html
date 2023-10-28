@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Compound~interest</h2>
+        <hr>
+        <input type="text" id="principal" placeholder="enter principal amount" />
+        <input type="text" id="rate" placeholder="enter rate of intrest" />
+        <input type="text" id="time" placeholder="enter time" />
+        <button onclick="compoundInterest()">click</button>
+
+        
+    </div>
+
+    <script>
+        function compoundInterest() {
+            var principal = parseInt(document.getElementById('principal').value);
+            var rate = parseInt(document.getElementById('rate').value);
+            var time = parseInt(document.getElementById('time').value);
+
+
+            var amount = Math.round(principal * (Math.pow((1 + rate / 100), time)));
+            var compoundInterestAmount = amount - principal;
+
+            document.write('Amount - ' + principal + '<br>');
+            document.write('Rate - ' + rate + '<br>');
+            document.write('Time - ' + time + '<br>');
+            document.write('CompoundInterestAmount - ' + compoundInterestAmount);
+        }
+    </script>
+</body>
+
+</html>

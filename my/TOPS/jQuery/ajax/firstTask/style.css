@@ -1,0 +1,229 @@
+body {
+	
+	background-color: #7edeae;
+	font-family: sans-serif;
+}
+.logo {
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+}
+.logo img {
+	width: 150px;
+	height: 40px;
+}
+.head-Title {	
+	width: auto;
+	height: 20px;
+	margin: 20px 0px 0px 250px;
+	float: left;
+	padding: 10px 0px 0px 0px;
+	box-sizing: border-box;	
+}
+.navbar-links {
+	height: 40px;
+	text-align: center;
+}
+.head-Title a {
+	width: 80px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(68, 68, 235);
+	float: left;
+	margin-left: 20px;
+}
+.head-Title a:hover {
+	background-color: #8ae7b8;
+	border-radius: 50px;
+}
+.user{
+float: left;
+}
+.user div{
+	float: left;
+}
+.userLink {
+	display: none;
+}
+.user:hover .userLink 
+{
+	display: block;
+}
+.contant {
+	margin-top: 70px;
+	margin-left: -10px;
+	height: 547px;
+}
+.ColumnBanner {
+	background-image: repeating-radial-gradient( #13577C, #17e690);
+	margin-top: 30px;
+	width: 600px;
+	height: 460px;
+	margin-left: 50px;
+	padding: 10px 10px 10px 10px;
+	float: left;
+	border-radius: 30px;
+	border: solid 2px white;
+}
+.box {
+	width: 200px;
+	height: 150px;
+	background-color: silver;
+	float: left;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
+	box-sizing: border-box;
+	outline: solid 2px rgb(107, 5, 107);
+	text-align: center;
+}
+.box:hover{
+	background-image: repeating-linear-gradient( #13577C, #d5e617);
+}
+.box img {
+	width: 185px;
+	height: 135px;
+	opacity: 0.3;
+}
+.box img:hover{
+	width: 170px;
+	height: 130px;
+	opacity: 1;
+}
+.product1 {
+	margin-top: 10px;
+}
+.product2 
+{
+	margin-top: 160px;
+}
+
+.product3 
+{
+	margin-top: 10px;
+}
+
+.product4 
+{
+	margin-top: 1px;
+	margin-left: 1px;
+}
+.product5 
+{
+	margin-top: 0px;
+	float: right;
+}
+
+
+.ColumnBanner2 {	
+	width: 600px;
+	height: 480px;
+	margin-top: 30px;
+	margin-left: 50px;
+	border: solid 2px white;	
+	float: left;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background-image: repeating-radial-gradient( #13577C, #17e690);
+
+}
+
+.img img {
+	width:500px;
+	height:300px; 
+	margin: 80px 0px 0px 50px;
+	
+}
+.about {
+	background-image: url(img/about.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 550px;
+	box-sizing: border-box;
+}
+.about-head {
+	color: white;
+	padding: 80px 0px 0px 600px;
+
+}
+.about-text {
+	color: white;
+	padding: 10px 200px 0px 400px;
+	font-size: 20px;
+	text-align: justify;
+}
+.signup {
+	text-align: center;
+	width: 450px;
+	height: 450px;
+	padding-top: 20px;
+	margin: 0px 400px 0px 500px;
+	border: 2px solid purple;
+	border-radius: 30px;
+	outline: 3px solid rgb(105, 105, 238);
+	background-image: repeating-linear-gradient( #13577C, #17e690);
+}
+.contant-box {
+
+	width: 400px;
+	height: 120px;
+	float: left;
+	margin-left: 200px;
+	margin-right: -50px;
+	border-radius: 40px;
+	box-sizing: border-box;
+	padding: 15px 20px 0px 40px;	
+}
+.contant-box table {
+	color: ghostwhite;
+	border-spacing: 5px;
+	text-shadow: 1px 1px black;
+	font-size: 20px;
+}
+.contant-data {
+	background-image: repeating-linear-gradient( #13577C, #17e690);
+	box-shadow: 10px 5px skyblue ;
+
+}
+.contant-data:hover {
+	background-image: repeating-linear-gradient( #13577C, #d5e617);
+	box-shadow: 10px 5px rgb(234, 207, 5);
+}
+.contant-data2 {
+	background-image: repeating-linear-gradient( #13577C, #17e690);
+	box-shadow: -10px 5px skyblue;
+}
+.contant-data2:hover {
+	background-image: repeating-linear-gradient( #13577C, #d5e617);
+	box-shadow: -10px 5px rgb(234, 207, 5);
+}
+.ProductList {
+	width: 200px;
+	height: 500px;
+	/* border: solid 1px black; */
+	margin-left: 400px;
+	/* text-align: center; */
+	padding-top: 20px;
+	box-sizing: border-box;
+	background-image: repeating-linear-gradient(#d5e617, #13577C );
+	box-shadow: 1.5px 1px #d5e617, -1.5px 1px #13577C, 0px 8px #d5e617, 0px -8px #13577C;
+	border-radius: 15px;
+	
+}
+.ProductList img {
+	width: 60px;
+	height: 60px;
+}
+.ProductList:hover {
+	width: 500px;
+	height: 200px;	
+}
+.ProductItem {
+	width: 500px;
+	height: 500px;
+	/* border: solid black 1px; */
+	margin-left: 500px;
+	border-radius: 50px;
+	box-shadow: 5px 1px ghostwhite, -5px 1px ghostwhite, 0px 5px pink, 0px -5px pink;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .button {
+            display: flex;
+        }
+
+        .tasks {
+            width: 400px;
+            /* border: 1px solid black; */
+            margin-top: 20px;
+            position: absolute;
+        }
+
+        .list {
+            width: 200px;
+            margin-top: 10px;
+            float: left;
+        }
+
+        .btnNew {
+            width: 100px;
+            margin-top: 10px;
+            float: left;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Q6 - Write the code for adding new elements dynamically?</h1>
+    </div>
+    <h3>Ans:</h3>
+    <div class="button">
+        <input type="text" class="list" id="sub" /> 
+        <button id="addTask" class="btnNew">Add Subject</button>
+        
+    </div>
+        <div class="tasks"></div>
+         
+    
+
+    <script>
+
+        let task = document.getElementsByClassName('tasks');
+        
+        let addTask = document.getElementById('addTask');
+        let list_value = document.getElementById('sub').value;
+
+
+        let no = 0;
+        addTask.addEventListener('click', function () {
+
+            let i =0;
+            for ( i = 0; i < task.length; i++) {
+                // console.log(no);
+                let newDiv = document.createElement('input');
+                let remove = document.createElement('button');
+                
+                newDiv.setAttribute('class', 'list');
+                
+                // How can i add dynamic ID      
+                
+                newDiv.setAttribute('id', no);
+                remove.setAttribute('id', no);
+
+                no++;
+                
+                remove.setAttribute('class', 'btnNew');
+                remove.innerText = 'Remove';
+                
+                // Finally append the input and button to the
+                // parent i.e. tasks   
+                task[i].append(newDiv, remove);
+
+
+                // Remove the input and button from
+                // parent i.e. tasks
+                remove.addEventListener('click', function(){
+                    if(newDiv.id == remove.id){
+                        newDiv.parentNode.removeChild(newDiv);
+                        remove.parentNode.removeChild(remove);
+                    }
+                    else {
+                        alert('The input id and btn id is not matched')
+                    }
+                });
+                                
+            }
+
+        });
+        
+                    
+        
+        
+    </script>
+</body>
+
+</html>

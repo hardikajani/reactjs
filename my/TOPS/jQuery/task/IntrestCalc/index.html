@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- <script type="text/javascript" src=".../jquery-3.6.4.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<div style="width: 500px; height: 600px;">
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Simple interest Calculator</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form>
+					<div class="form-group">
+						<label class="form-group">Principal</label>
+						<input class="form-control" type="text" id="principal_amount">
+					</div>
+					<div class="form-group">
+						<label class="form-group">Start Date</label>
+						<input class="form-control" type="date" id="start_date">
+					</div>
+					<div class="form-group">
+						<label class="form-group">End Date </label>
+						<input class="form-control" type="date" id="end_date">
+					</div>
+					<div class="form-group">
+						<label class="form-group">Rate of interest</label>
+						<select class="form-control" id="intrest_rate">
+							<option value=""> --Int-Rate--</option>
+							<option>6.50</option>
+							<option>7.50</option>
+							<option>7.75</option>
+							<option>8.00</option>
+							<option>8.50</option>
+							<option>8.75</option>
+							<option>9.00</option>
+						</select>
+					</div>
+					<button type="button" class="btn btn-primary">Calculate</button>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="result">		
+
+			</div>
+		</div>
+
+	</div>
+</div>
+    <script src="min.js"></script>
+</body>
+
+</html>

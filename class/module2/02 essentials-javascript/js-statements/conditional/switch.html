@@ -1,0 +1,34 @@
+<script>
+  // switch : switch is used to check multiple true condition while making case if condition is false default is executed.
+
+  // syntax
+  // switch (condition) {
+  //     case value:
+  //         statements;
+  //         break;
+  //     case value1:
+  //         statements;
+  //         break;
+
+  //     default:
+  //         break;
+  // }
+
+  var grade = "K";
+  document.write("Take your grade in A,B,C format","<br>");
+  switch (grade) {
+    case "A":
+      document.write("You are topper student &#9786");
+      break;
+    case "B":
+      document.write("You are average student &#9786");
+      break;
+    case "C":
+      document.write("You are failed student &#9785");
+      break;
+
+    default:
+    document.write("Your grade is not found anywhere contact with admin");
+      break;  
+  }
+</script>

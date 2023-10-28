@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script>
+			function toggle() {
+				box=document.getElementById('box');
+
+				if(box.style.backgroundColor==='red'){
+					box.style.backgroundColor='green';
+				}
+				else{
+					box.style.backgroundColor='red';
+				}
+			}
+
+			function colorName(){
+				box2=document.getElementById('box2');
+				colorNumber=parseInt(document.getElementById('colorNumber').value);
+
+				if(colorNumber===1){
+					box2.style.backgroundColor='red';
+				}
+				else if(colorNumber===2){
+					box2.style.backgroundColor='green';
+				}
+				else{
+					alert('Please enter value 1 or 2');
+				}
+
+			}
+		</script>
+	</head>
+	<body>
+		<div style="width:200px; height:200px; border: 1px solid black; float:left;" id="box">
+			<input type="button" value="red/green" onclick="toggle()">
+		</div>
+		
+
+
+		<div style="width:300px; height:200px; border: 1px solid black; margin-left: 20px; float:left;" id="box2">
+			<input type="text" id="colorNumber">
+			<input type="button" value="ok" onclick="colorName()">
+		</div>
+		
+	</body>
+</html>

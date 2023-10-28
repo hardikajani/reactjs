@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <script>
+            function result(){
+                num=parseInt(document.getElementById('num').value);
+                
+                if(num<5){
+                    document.write('num value is- ' + num);
+                } else{
+                    document.write('num value is < 5 ');
+                }
+            }
+
+            function greaterNumber()
+            {
+                num1=parseInt(document.getElementById('num1').value);
+                num2=parseInt(document.getElementById('num2').value);
+
+                if(num1<=num2){
+                    document.write('num-2 is greater')
+                }else{
+                    document.write('num-1 is greater')
+
+                }
+            }
+            function evenorodd(){
+                numbers=parseInt(document.getElementById('numbers').value);
+
+                if(numbers%2==0){
+                    document.write('numbers -' + numbers + ' is even')
+                }
+                else{
+                    document.write('numbers -' + numbers + ' is odd')
+
+                }
+            }
+            function greaterNumber3(){
+                num3=parseInt(document.getElementById('num3').value);
+                num4=parseInt(document.getElementById('num4').value);
+                num5=parseInt(document.getElementById('num5').value);
+                
+
+                if((num3 >= num4) && (num3 >= num5))
+                {
+                    document.write(num3 + ' is greater');
+                    // alert('hello');
+                }
+                else if ((num4 >= num3) && (num4 >= num5))
+                {
+                    document.write(num4 + ' is greater');
+                }
+                else if((num5 >= num3) && (num5 >= num4))
+                {
+                    document.write(num5 + ' is greater');
+                }
+            }
+
+            function markscalc() {
+				EngMarks=parseInt(document.getElementById('EngMarks').value);
+				HindiMarks=parseInt(document.getElementById('HindiMarks').value);
+				GujMarks=parseInt(document.getElementById('GujMarks').value);
+
+				total=EngMarks+HindiMarks+GujMarks;
+				Per=total / 3;
+
+				document.write('Eng. '+ EngMarks + '<br>'+ 'Hindi '+ HindiMarks + '<br>'+ 'Guj ' + GujMarks + '<br>' + 'Total ' + total + '<br>' + 'Per%' + Per + '<br>');
+
+
+                if(EngMarks>100 || HindiMarks>100 || GujMarks>100)
+                {
+                    alert('Subject mark is not more then 100');
+                }
+                else if(EngMarks<39 || HindiMarks<39 || GujMarks<39)
+                {
+                    alert('fail');
+                }
+                else {
+                    if(Per >= 85){
+                        document.write('Grade-A');
+                    }
+                    else if(Per >= 70){
+                        document.write('Grade-B');
+                    }
+                    else if(Per >= 55){
+                        document.write('Grade-C');
+                    }
+                    else if(Per >= 40){
+                        document.write('Grade-D');
+                    }
+                    else if(Per <= 39){
+                        document.write('Fail');
+                    }
+                }                
+			}
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="num">
+        <input type="button" value="ok" onclick="result()">
+
+        <div style="width: 300px; height: 200px; border: 1px solid black; margin-top: 100px; float: left;">
+                <h3>Greater Number out of 2</h3>
+                Num1<input type="text" id="num1">
+                Num2<input type="text" id="num2">
+                <input type="button" value="save" onclick="greaterNumber()">
+        </div>
+        <div style="width: 300px; height: 200px; border: 1px solid black; margin-top: 100px; float: left;">
+                <h3>Even or odd Number</h3>
+                Num<input type="text" id="numbers">
+                <input type="button" value="save" onclick="evenorodd()">
+        </div>
+        <div style="width: 300px; height: 200px; border: 1px solid black; margin-top: 100px; float: left;">
+                <h3>Greater Number out of 2</h3>
+                Num1<input type="text" id="num3">
+                Num2<input type="text" id="num4">
+                Num3<input type="text" id="num5">
+                <input type="button" value="save" onclick="greaterNumber3()">
+        </div>
+        <div style="width: 300px; height: 200px; border: 1px solid black; margin-top: 100px; float: left;">
+			<h3>Result</h3>
+			<table>
+				<tr>
+					<td>Eng.</td>
+					<td><input type="text" id='EngMarks'></td>
+				</tr>
+				<tr>
+					<td>Hindi</td>
+					<td><input type="text" id='HindiMarks'></td>
+				</tr>
+				<tr>
+					<td>Guj.</td>
+					<td><input type="text" id='GujMarks'></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Submit" onclick="markscalc()"></td>
+				</tr>
+			</table>
+		</div>
+    </body>
+</html>

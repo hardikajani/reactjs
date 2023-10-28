@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function test()
+        {
+            var txt=document.getElementById("demo");
+            txt.classList.add("mystyle");
+        }
+    </script>
+
+    <style>
+
+        .mystyle
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            padding: 15px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body onload="test()">
+    <div>Hi i am Hardik</div>
+    <div id="demo">Hi i am brijesh</div>
+    
+</body>
+</html>

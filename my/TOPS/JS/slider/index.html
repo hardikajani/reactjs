@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="main" id="main">
+        <img src="https://thumbs.dreamstime.com/z/artificial-intelligence-concept-businessman-102115899.jpg" alt="img1" id="imgID">
+        <div class="button">
+            <button id="btn_left" onclick="changeImages()"><img src="./img/left.png" alt="left" ></button>
+            <button id="btn_right" onclick="changeImages()"><img src="./img/right.png" alt="right" ></button>            
+        </div>
+    </div>
+
+    <script>
+        var img = document.getElementById('imgID');
+
+        function changeImages()
+        {
+            if(img.src == 'https://thumbs.dreamstime.com/z/artificial-intelligence-concept-businessman-102115899.jpg')
+            {
+                img.src = 'https://thumbs.dreamstime.com/z/ai-machine-learning-hands-robot-human-touching-big-data-network-connection-background-science-artificial-intelligence-172987598.jpg';
+            }
+            else if(img.src=='https://thumbs.dreamstime.com/z/ai-machine-learning-hands-robot-human-touching-big-data-network-connection-background-science-artificial-intelligence-172987598.jpg')
+            {
+                img.src='https://thumbs.dreamstime.com/z/robotics-cyberspace-future-concept-abstract-digital-hand-globe-blurry-background-robotics-cyberspace-future-121862553.jpg';
+            }            
+            else{
+                img.src = 'https://thumbs.dreamstime.com/z/artificial-intelligence-concept-businessman-102115899.jpg';
+            }
+        }
+    </script>
+</body>
+</html>

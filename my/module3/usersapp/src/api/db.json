@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "firstName": "Hardik",
+      "lastName": "Ajani",
+      "countryCode": "356",
+      "mobileNumber": "9428254548",
+      "id": "aadhyashree@gmail.com",
+      "password": "admin"
+    },
+    {
+      "firstName": "Hardik",
+      "lastName": "Hardik",
+      "countryCode": "356",
+      "mobileNumber": "9428254548",
+      "id": "webajanihardik@gmail.com",
+      "password": "admin"
+    },
+    {
+      "firstName": "Paresh",
+      "lastName": "SIngala",
+      "countryCode": "356",
+      "mobileNumber": "9428254549",
+      "id": "paresh@gmail.com",
+      "password": "12345"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.navbar 
+{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand img {
+    width: 241px;
+    height: 122px;
+}
+.nav-link
+{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.nav-link li 
+{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.nav-link a 
+{
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+.nav-link a:hover{
+    color: #57ced3;
+}

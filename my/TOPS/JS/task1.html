@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function intCalc(){
+
+				PrincipalAmount=parseInt(document.getElementById('PrincipalAmount').value);
+				IntrestRate=parseInt(document.getElementById('IntrestRate').value);
+				Days=parseInt(document.getElementById('Days').value);
+				Intrest=Days/365*IntrestRate;
+				IntrestAmount=PrincipalAmount*Intrest/100;
+
+
+				document.write('Principal Amount - ' + PrincipalAmount + '<br>' + 'Rate of Intrest - ' + IntrestRate + '%' +'<br>' + 'Days - ' + Days + '<br>' + 'Intrest Amount - ' + IntrestAmount + '<br>' +'Total Amount with Intrest - ' + (PrincipalAmount+IntrestAmount));
+
+			}
+
+			function markscalc() {
+				EngMarks=parseInt(document.getElementById('EngMarks').value);
+				HindiMarks=parseInt(document.getElementById('HindiMarks').value);
+				GujMarks=parseInt(document.getElementById('GujMarks').value);
+
+				total=EngMarks+HindiMarks+GujMarks;
+				Per=total / 3;
+
+				document.write('Eng. '+ EngMarks + '<br>'+ 'Hindi '+ HindiMarks + '<br>'+ 'Guj ' + GujMarks + '<br>' + 'Total ' + total + '<br>' + 'Per%' + Per);
+			}
+			function boxred(){
+				box=document.getElementById('box');
+
+				box.style.backgroundColor='red';
+				box.style.opacity='0.5';
+
+			}
+			function boxgreeg(){
+				box=document.getElementById('box');
+
+				box.style.backgroundColor='green';
+				box.style.width='300px';
+			}
+			function boxyellow(){
+				box=document.getElementById('box');
+
+				box.style.backgroundColor='yellow';
+				box.style.height='400px';
+			}
+			function colorName() {
+				colorname=document.getElementById('colorname').value;
+				colorBox=document.getElementById('colorBox');
+
+				colorBox.style.backgroundColor=colorname;
+				colorBox.style.opacity='0.8';
+				colorBox.style.width='300px';
+
+			}
+
+			function circle(){
+
+				r=parseInt(document.getElementById('r').value);
+
+				a=3.14*r*r;
+				c=2*3.14*r;
+
+				document.write(a + '<br>');
+				document.write(c);
+
+			}
+
+		</script>
+	</head>
+	<body>
+		<div>
+			<table>
+				<h3>Intrest Calculation</h3>
+				<tr>
+					<td>
+			<input type="text" placeholder="Enter Amount" id="PrincipalAmount"></td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Enter Rate of Intrest Per Year" id="IntrestRate"></td>
+				</tr>
+				<tr>
+					<td><input type="text" placeholder="Number of Days" id="Days"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Claculate Intrest" onclick="intCalc()"></td>
+				</tr>
+			</table>			
+		</div>
+		<div>
+			<h3>Result</h3>
+			<table>
+				<tr>
+					<td>Eng.</td>
+					<td><input type="text" id='EngMarks'></td>
+				</tr>
+				<tr>
+					<td>Hindi</td>
+					<td><input type="text" id='HindiMarks'></td>
+				</tr>
+				<tr>
+					<td>Guj.</td>
+					<td><input type="text" id='GujMarks'></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Submit" onclick="markscalc()"></td>
+				</tr>
+			</table>
+		</div>
+		<br><br>
+
+		<div style="width: 200px; height:200px; border: 1px solid black; float: left;" id='box'>
+			<!-- <p>How i can apply 2 style in js function onClick event</p> -->
+			<input type="button" value="red"  onclick="boxred()">
+			<input type="button" value="green" onclick="boxgreeg()">
+			<input type="button" value="yellow" onclick="boxyellow()">
+		</div>
+			
+		<div style="width: 200px; height:200px; border: 1px solid black; float: left; margin-left: 40px;" id='colorBox'>
+		</div>
+		<div>
+			<input type="text" id='colorname' placeholder="Enter Color Name">
+			<input type="button" value="ok" onclick="colorName()">
+		</div>
+
+			<div style="margin-left: 500px; float: left;">
+				<input type="text" id='r'>
+				<input type="button" onclick="circle()" value="ok">
+			</div>
+		
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+</head>
+<body>
+    <div>
+        <h1> Q7 - • What is the difference between ViewState and SessionState?</h1>
+        <p>Ans : What is ViewState?
+
+            Viewstate is a client-side mechanism for managing state. Viewstate is a specific type of data that only applies to the page where it is utilised.
+
+            It saves the data on the same page in encrypted format. Information that you want to access from the same web page is stored in ViewState. ViewState of one page cannot be accessed directly from another page. If you want to access a specific ViewState value, you can store it in the Context collection and then access it from another page.
+
+            Key points of Viewstate:
+
+            Only page level maintenance.
+            Only one page, not several pages, can display the view state.
+            When a new page is loaded, ViewState values are lost or cleared.
+            
+            What is Session State?
+
+            Session State is a method for managing server-side state. When a new client first interacts with a Web application, a session ID is generated and associated with all subsequent requests from the same client for the duration of the session. It is used mainly for storing user specific data [session specific data]. The session value can be used for the whole session until the session expires or the user closes the session. The session value in accessible on all the pages.
+
+            When it comes to storing data on a browser, session storage is a popular option. It allows developers to save and retrieve various values. Session storage, as opposed to local storage, only keeps data for a single session. When the user closes the browser window, the data is cleared.
+
+            The SessionState will be cleared if the following conditions are met:
+
+            Cleared by the programmer
+            Cleared by the user
+            Cleared when Timeout occurs
+            </p>
+
+            <p></p>
+    </div>
+</body>
+</html>

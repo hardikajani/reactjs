@@ -1,0 +1,218 @@
+body {
+    background-color: #55688a;
+    margin: 0px 0px 0px 0px;
+}
+.Nevbar{
+    margin: 0px 0px 0px 5px;
+    /* border: 1px solid white; */
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+.Nevbar img {
+    width: 23px;
+    height: 20px;
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
+.Nevbar h2 {
+    color: white;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    display: flex;
+}
+.search {
+    width: 640px;
+    height: 45px;
+    background-color: #7b89a3;
+    margin: 0px 0px 0px 105px;
+    border-radius: 10px;
+    float: left;
+    align-items: center;
+    display: flex;
+}
+.search img {
+    width: 29px;
+    height: 28px;
+    margin: 0px 0px 0px 5px;
+}
+.searchinput {
+    width: 552px;
+    height: 40px;
+    margin: 3px 0px 0px 10px;
+    border: none;
+    background-color: #7b89a3;
+    color: white;
+    font-size: 17px;
+    float: left;
+    outline: none;
+}
+.searchinput:focus {
+    background-color: white;
+    color: #7b89a3;
+    border-radius: 10px;
+}
+.filtericon{
+    margin: 3px 0px 0px 40px;
+    float: left;
+}
+.menu {
+    float: left;
+    margin-left: 250px;
+    display: flex;
+}
+.menu img {
+    width: 25px;
+    height: 25px;
+    margin: 10px 0px 0px 20px;
+}
+.sidebar {
+    /* border: 2px solid black; */
+    margin-top: 5px;
+    width: 265px;
+    height: 560px;
+    float: left;
+}
+.mailList {
+    background-color: #dde1e8;
+    width: 1080px;
+    height: 560px;
+    margin: 5px 0px 0px 0px;
+    border-radius: 10px;
+    float: left;
+}
+.Compose{
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    margin: 10px 0px 0px 10px;
+    text-align: center;
+}
+.Compose img {
+    width: 40px;
+    height: 40px;
+    margin: 3px 0px 0px 5px;
+    float: left;
+}
+.Compose label {
+    float: left;
+    margin: 15px 0px 0px 10px;
+    font-size: 17px;
+}
+.pages{
+    width: 260px;
+    height: 30px;
+    /* border: 2px solid black; */
+    margin: 10px 0px 0px 0px;
+    float: left;
+    padding: 5px 0px 0px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+}
+.pagesIcon{
+    margin-left: 20px;
+    float: left;
+}
+.pagesIcon img {
+    width: 17px;
+    height: 17px;
+}
+.pagesLink {
+    margin-left: 20px;
+    float: left;
+    font-size: 17px;
+    color: white;
+}
+
+.pages:hover {
+    background-color: #8896ad;    
+    border-radius: 9px;
+    animation-name: ex;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes ex {
+    0%{opacity: 0; border-radius: 1px;width: 10px; height: 30px;}
+    20%{opacity: 0.1}
+    40%{opacity: 0.3}
+    60%{opacity: 0.6}
+    80%{opacity: 0.8}
+    100%{ opacity: 1; border-radius: 9px; width: 260px; height: 30px;}
+}
+.number {
+    width: 60px;
+    height: 20px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 5px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+   
+}
+.pages:hover .number {
+    display: block;
+}
+.head{
+    float: left;
+    /* border: 1px solid black; */
+    margin: 10px 0px 0px 20px;
+    padding: 2px 0px 0px 0px;
+    box-sizing: border-box;
+}
+.head input {
+    width: 15px;
+    height: 15px;
+    background-color: #55688a;
+}
+.head img {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+.head img:hover {
+    background-color: #8896ad;
+
+}
+.pagenation {
+    width: 400px;
+    /* border: 2px solid black; */
+    margin: 10px 00px 0px 500px;
+    box-sizing: border-box;
+    float: left;
+}
+.pagenation img {
+    width: 12px;
+    height: 12px;
+    margin-left: 20px;
+    float: left;
+}
+.maildata {
+    width: 1070px;
+    height: 495px;
+/*     border: 1px solid black; */
+    margin: 50px 0px 0px 2px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+       
+}
+
+.dataimg {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 10px;
+}
+.mailhead td{
+    border: none;
+}
+.mailhead td:hover{
+    color: blue;
+}

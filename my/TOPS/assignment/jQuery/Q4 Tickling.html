@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling tickling example</title>
+    <style type="text/css">
+        body {
+            margin: auto;
+        }
+        .addStyle {
+            color: red;
+            border: 2px solid red;
+            margin-top : 10px;
+            margin-left: 10px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $('div').parent().css({'width' : '1300px', 'height' : '350px'}).addClass('addStyle');
+                $('ul').parent().css({'width' : '800px', 'height' : '300px'}).addClass('addStyle');
+                $('li').parent().css({'width' : '600px', 'height' : '200px'}).addClass('addStyle');
+                $('input').parent().css({'width' : '400px', 'height' : '100px'}).addClass('addStyle');
+    });
+    </script>
+</head>
+<body>
+    great-great-grandparent
+    <div>
+        great-grandparent
+        <ul>
+            grandparent
+            <li>
+                direct parent
+                <br />
+                <input type="text" placeholder="span">
+            </li>
+        </ul>        
+    </div>
+</body>
+</html>

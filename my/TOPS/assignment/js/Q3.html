@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    <div>
+        <h1> Q3 - What is negative Infinity?</h1>
+        <p>Ans : The negative infinity in JavaScript is a constant value that is used to represent a value that is the lowest available. This means that no other number is lesser than this value. It can be generated using a self-made function or by an arithmetic operation. </p>
+        <p>Note: JavaScript shows the NEGATIVE_INFINITY value as -Infinity.</p>
+    </div>
+    <div>
+        <h3>Example</h3> 
+    <ol>
+        <li id="dividePos">
+            <b>Negative infinity divided by any Positive number
+                  (except Positive infinity)
+              </b>
+            <br>
+            Number.NEGATIVE_INFINITY / 123 =
+        </li>
+        <br>
+        <li id="divideNeg">
+            <b>Negative infinity divided by any Negative number
+                  (except Negative infinity)
+              </b>
+            <br>
+            Number.NEGATIVE_INFINITY / -123 =
+        </li>
+    </ol>
+    <button onclick="calc()">Click Here to calculate</button>
+    </div>
+    <script>
+        function calc() {
+            document.getElementById("dividePos").innerHTML += Number.NEGATIVE_INFINITY / 123;
+            document.getElementById("divideNeg").innerHTML += Number.NEGATIVE_INFINITY / -123;
+        }
+    </script>
+</body>
+</html>

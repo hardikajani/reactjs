@@ -1,0 +1,23 @@
+* 
+{
+    font-family: cursive;
+}
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+#calculator 
+{
+    width: 80%;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: white;
+
+}

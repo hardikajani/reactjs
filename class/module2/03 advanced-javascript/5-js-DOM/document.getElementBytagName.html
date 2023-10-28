@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function test()
+        {
+            var nm=document.getElementById("demo").tagName;
+            document.getElementById("demo").innerHTML=nm;
+        }
+    </script>
+</head>
+<body>
+    <p id="demo">Hi i am brijesh</p>
+    <p>Hi brijesh</p>
+    <button type="button" onclick="test()">click me</button>
+</body>
+</html>

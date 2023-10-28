@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>paytm</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+		<script>
+			let box = document.getElementById('box');
+			let pfcArr = ['Payments', 'Ticket Booking', 'Financial Services', 'UPI'];
+
+			for(i=0; i<pfcArr.length; i++){
+				data=pfcArr[i];
+				if(data!=0){
+					
+					$(document).ready(function() {
+						$('.PFC').mouseenter(function(){
+							$('.box').fadeIn();
+							$('.box').html('<a href="#" class="paymentLink">'+data+'<img src="img/right.png"></a>');
+							
+							$('.paymentLink').mouseenter(function(){
+								$('.box2').fadeIn();
+								$('.box2').html('<a href="#" class="paymentLink">Home<img src="img/right.png"></a>');
+							});
+							// $('.payments').mouseenter(function(){
+							// 	$('.box2').html('<a href="#" class="paymentLink">' +pfcArr[1]+ '<img src="img/right.png"></a>');
+							// });
+							// $('.ticketBooking').mouseenter(function(){
+							// 	$('.box2').html('<a href="#" class="paymentLink">' +pfcArr[2]+ '<img src="img/right.png"></a>');
+							// });
+							// $('.financialServices').mouseenter(function(){
+							// 	$('.box2').html('<a href="https://paytm.com/" class="paymentLink">' +pfcArr[3]);
+							// });
+						});
+						
+						$('.PFC').mouseleave(function(){
+								$('.box').fadeOut();
+								$('.box2').fadeOut();
+						});
+					});
+				}
+			}
+				
+			
+			
+		</script>
+</head>
+	<body>
+		<div class="logo">
+			<a href="Home.html"><img src="img/logo.png"></a>
+			
+		</div>
+		<div class="navbarLinks">
+			<ul>
+				<li class="PFC">Paytm for Consumer
+					<div class="box">
+						<!-- <a href="#" class="paymentLink payments">Payments <img src="img/right.png"></a> -->
+						<!-- <a href="#" class="paymentLink ticketBooking ">Ticket Booking <img src="img/right.png"></a>
+						<a href="#" class="paymentLink financialServices">Financial Services <img src="img/right.png"></a> -->
+					</div>
+					<div class="box2">
+						
+					</div>
+										
+				</li>
+				
+				<li>Paytm for Business
+					<div></div>
+				</li>
+				<li>Investor Relations
+					<div></div>
+				</li>
+				<li>Company
+					<div></div>
+				</li>
+				<li>Career
+					<div></div>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

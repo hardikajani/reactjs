@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.links ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.links ul li {
+  text-decoration: none;
+  list-style: none;
+  
+}
+.main_container{
+  background-color: #212121 !important;
+}
+.routs_pages{
+  position: relative;
+}

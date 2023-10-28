@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<!-- <link rel="stylesheet" type="text/css" href="dom.css"> -->
+			<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script type="text/javascript">
+			function register(){
+				var fullName = document.getElementById('fullName').value;
+				var email = document.getElementById('email').value;
+				var countryName = document.getElementById('countryName').value;
+				var number = parseInt(document.getElementById('number').value);
+				var dob = document.getElementById('dob').value;
+				var gender = document.getElementById('gender').value;
+				var dataBox = document.getElementById('dataBox');
+
+				// dataBox.innerHTML='Name  -' + fullName;				
+
+			//console.log(fullName, email, countryName, number, dob, gender);
+			}
+			$(document).ready(function(){
+				$('.btn').click(function register(){
+					$(dataBox).html(fullName.value+'<br>'+email.value+'<br>'+countryName.value+'<br>'+number.value+'<br>'+dob.value+'<br>'+gender.value);
+					$('.register_form').empty();	
+				});
+
+			});
+		</script>
+	</head>
+	<body>
+		<div class="register_form">
+			<p>Register with an Email ID or Mobile Number</p>
+			<input type="text" id="fullName" placeholder="Full Name">
+			<input type="email" id="email" placeholder="Email">
+			<select id="countryName">
+				<option selected>--Select Country--</option>
+				<option id="india">India</option>
+			</select>
+			<input type="text" id="number" placeholder="Mobile Number">
+			<input type="date" id="dob" placeholder="Birthdate"><br>
+			<select id="gender">
+				<option selected>--Select Gender--</option>
+				<option id="Male">Male</option>
+				<option id="Female">Female</option>
+				<option id="Other">Other</option>
+			</select><br>
+			<button id="btn" class="btn">Create New Account</button>
+		</div>
+		<div id="dataBox"></div>
+	</body>
+</html>

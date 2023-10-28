@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+</head>
+<body>
+    <div>
+        <h1> Q5 - What are undeclared and undefined variables?</h1>
+        <p>Ans : Undeclared : It occurs when a variable which hasn’t been declared using var, let or const is being tried to access.
+
+            Undefined − It occurs when a variable has been declared using var, let or const but isn’t given a value.</p>
+    </div>
+        <h3>Example</h3> 
+        <div class="result"></div>
+        <div class="result"></div>
+        <button class="Btn">Click here</button>
+
+    <script>
+    let BtnEle = document.querySelector(".Btn");
+    let resEle = document.querySelectorAll(".result");
+    let a;
+    BtnEle.addEventListener("click", () => {
+        resEle[0].innerHTML += "Accessing undefined variable = " + a;
+        try {
+            resEle[1].innerHTML = b;
+        } catch (err) {
+            resEle[1].innerHTML = "Accessing undeclared variable = " + err;
+        }
+    });
+    </script>
+</body>
+</html>

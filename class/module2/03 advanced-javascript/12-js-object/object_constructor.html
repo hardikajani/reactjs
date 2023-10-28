@@ -1,0 +1,15 @@
+<script>
+    // object defined as constructor then its values are access by this keyword 
+    // this is used to access current object data
+    function emp(id,name,age,salary)
+    {
+      this.id=id;
+      this.name=name;
+      this.age=age;
+      this.salary=salary
+    }
+    //
+    employee=new emp(1001,"hardik",24,87990);
+    document.write("Id is "+employee.id+"<br>"+"Name "+employee.name+"<br>"+"age "+employee.age+"<br>"+"Salary "+employee.salary+"<br>"); 
+
+</script>

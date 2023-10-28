@@ -1,0 +1,30 @@
+.main {
+    border: 1px solid black;
+    width: 1300px;
+    height: 300px;
+    margin: 50px 0px 0px 20px;
+}
+.main img {
+    width: 1300px;
+    height: 300px;
+}
+
+.button {
+    margin: -150px 0px 0px 0px;
+    float: left;
+    /* border: 1px solid rgb(248, 246, 246); */
+    width: 1299px;
+    position: relative;
+}
+.button img {
+    width: 20px;
+    height: 20px;
+}
+#btn_left {
+    float: left;
+    margin-left: 5px;
+}
+#btn_right {
+float: right;
+margin-right: 5px;
+}

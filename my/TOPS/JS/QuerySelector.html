@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>QuerySelector</title>
+	
+	<style type="text/css">
+		.even {
+			background-color: #7edeae;
+			color: white;
+			text-align: center;
+		}
+		
+		.odd {
+			text-transform: uppercase;
+			color: rgb(250, 68, 235);
+			text-align: center;
+		}
+		.odd:hover {
+			background-color: grey;
+		}
+		td{
+			width: 250px;
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<table border="0" align="center">
+		<tr>
+			<th>Name</th>
+			<th>City</th>
+			<th>Roll Number</th>
+			<th>Subject</th>
+		</tr>
+		<tr>
+			<td>Jignesh </td>
+			<td>Rajkot</td>
+			<td>1</td>
+			<td>Eng.</td>
+		</tr>
+		<tr>
+			<td>Paresh </td>
+			<td>Junagadh</td>
+			<td>2</td>
+			<td>Guj.</td>
+		</tr>
+		<tr>
+			<td>Hemant </td>
+			<td>Dhoraji</td>
+			<td>3</td>
+			<td>Hindi</td>
+		</tr>
+		<tr>
+			<td>Rajesg </td>
+			<td>Jetpur</td>
+			<td>4</td>
+			<td>Eng.</td>
+		</tr>
+		<tr>
+			<td>Rajesg </td>
+			<td>Jetpur</td>
+			<td>5</td>
+			<td>Eng.</td>
+		</tr>
+		<tr>
+			<td>Rajesg </td>
+			<td>Jetpur</td>
+			<td>6</td>
+			<td>Eng.</td>
+		</tr>
+		<tr>
+			<td>Rajesg </td>
+			<td>Jetpur</td>
+			<td>7</td>
+			<td>Eng.</td>
+		</tr>
+		<tr>
+			<td>Rajesg </td>
+			<td>Jetpur</td>
+			<td>8</td>
+			<td>Eng.</td>
+		</tr>
+		<tr>
+			<td>Rajesg </td>
+			<td>Jetpur</td>
+			<td>9</td>
+			<td>Eng.</td>
+		</tr>
+		<tr>
+			<td>Rajesg </td>
+			<td>Jetpur</td>
+			<td>10</td>
+			<td>Eng.</td>
+		</tr>
+		<tr>
+			<td>Rajesg </td>
+			<td>Jetpur</td>
+			<td>11</td>
+			<td>Eng.</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		document.querySelector('tr').style.backgroundColor = 'red';
+		document.querySelector('tr').style.color = 'black';
+
+
+		var data = document.querySelectorAll('tr');
+
+		for(var i=0; i<data.length; i++)
+		{
+			// This if and else condition is using for Even and odd data selector
+			if(i%2==0){
+                    data[i].classList.add('even');
+                }
+                else{
+                    data[i].classList.add('odd');
+                }			
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>2nd Task</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="nevbar">
+        <div class="logo">
+		    <img src="img/asus.png">			
+		</div>
+		
+		<div class="nev_Link">		
+			<a href="#">Home</a>
+			<a href="#">Product</a>
+			<a href="#">About</a>			
+			<a href="#">Contact</a>			
+		</div>
+    </div>
+    <div class="main">
+        <div class="slideImg">
+            <img src="https://dlcdnwebimgs.asus.com/files/media/97cf2aef-1f18-4981-8f9e-880d7b588958/images/DT/1.jpg" width="100%" height="100%" />
+        </div>
+        <div class="container">
+            <div class="row1"  >
+                <img src="https://www.asus.com/media/Odin/Websites/in/SiteSetting/20230512060509.jpg?webp" width="100%" height="100%" />
+            </div>
+            <div class="col1">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var img = document.getElementById('slideImg');
+
+        function changeImages()
+        {
+            if(img.src == 'https://dlcdnwebimgs.asus.com/files/media/97cf2aef-1f18-4981-8f9e-880d7b588958/images/DT/1.jpg"')
+            {
+                img.src = 'https://dlcdnwebimgs.asus.com/files/media/18b94d49-922a-4d9a-98a9-a4b9a1eaf10b/images_v2/DT_01.webp';
+            }
+                      
+            else{
+                img.src = 'https://dlcdnwebimgs.asus.com/files/media/97cf2aef-1f18-4981-8f9e-880d7b588958/images/DT/1.jpg';
+            }
+        }
+        changeImages();
+    </script>
+</body>
+</html>

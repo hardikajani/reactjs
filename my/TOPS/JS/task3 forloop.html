@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			// for (i=1; i<=10; i++){
+			// 	document.write("Hello");
+			// 	document.write("<br>");
+			// }
+
+			// for (i=2; i<=20; i++){
+			// 	document.write(i);
+			// 	document.write("<br>");
+			// }
+			// for (i=10; i>=1; i--){
+			// 	document.write(i);
+			// 	document.write("<br>");
+			// }
+
+			function mathTable() {
+				number=parseInt(document.getElementById('number').value);
+
+				for(i=1; i<=10; i++)
+				{
+					result=number*i;
+					document.write(number + ' * ' + i + ' = '+ result)
+					document.write("<br>");
+				}
+			}
+
+			function summation() {
+				const summationNumber=parseInt(document.getElementById('summationNumber').value);
+
+				let sum = 0;
+
+				for (let i = 1; i <= summationNumber; i++) {
+				    sum += i;
+				}
+				document.write(sum);
+			}
+
+			function factorial() {
+				const factorialNumber=parseInt(document.getElementById('factorialNumber').value);
+
+				let multyplay = 1;
+
+				for (let i = 1; i <= factorialNumber; i++) {
+				    multyplay *= i;
+				}
+				document.write(multyplay);
+			} 
+
+
+			function fibonacci(){
+				const fibonacciNumber=parseInt(document.getElementById('fibonacciNumber').value);
+				let n1 = 0, n2 = 1, nextTerm;
+
+				document.write('Fibonacci Series');
+
+				for (let i = 1; i <= fibonacciNumber; i++) 
+				{
+					document.write('<br>');
+					document.write(n1);
+					
+					nextTerm = n1 + n2;
+					n1 = n2;
+					n2 = nextTerm;
+				}
+			}
+
+		</script>
+	</head>
+	<body>
+		<input type="text" placeholder="Enter Number for Maths Table" id="number">
+		<input type="button" onclick="mathTable()" value="ok">
+
+		<div style="border: 1px solid black; width: 300px; height: 200px; margin-top:20px; float:left;">
+			Summation & Natural
+			<input type="text" id="summationNumber">
+			<input type="button" onclick="summation()" value="ok">
+		</div>
+		<div style="border: 1px solid black; width: 300px; height: 200px; margin-top:20px; float:left;">
+			Factorial
+			<input type="text" id="factorialNumber">
+			<input type="button" onclick="factorial()" value="ok">
+		</div>
+
+		<div style="border: 1px solid black; width: 300px; height: 200px; margin-top:20px; float:left;">
+			Fibonacci Serie
+			<input type="text" id="fibonacciNumber">
+			<input type="button" onclick="fibonacci()" value="ok">
+		</div>
+		
+	</body>
+</html>

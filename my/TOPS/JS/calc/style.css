@@ -1,0 +1,51 @@
+.contant {
+	width: 266px;
+	height: 475px;
+	/* border: solid 1px black; */
+	margin-left: 400px;
+	/* text-align: center; */
+	/* padding-top: 20px; */
+	box-sizing: border-box;
+	background-color: black;
+	/* box-shadow: 1.5px 1px #d5e617, -1.5px 1px #13577C, 0px 8px #d5e617, 0px -8px #13577C; */
+	border-radius: 20px;
+	
+}
+.screen {
+	background-color: black;
+	margin: 0px 0px 0px 0px;
+	width: 266px;
+	height: 150px;
+	float: left;
+	border-radius: 20px;
+	color: white;
+	font-size: 25px;
+	border: none;
+	text-align: right;
+	padding-top: 80px;
+	box-sizing: border-box;
+
+}
+.buttons_raw {
+	float: left;
+	margin: 5px 0px 0px 0px;
+}
+button {
+	width: 50px;
+	height: 50px;
+	color: white;
+	font-size: 25px;
+	border-radius: 50%;
+	border: none;
+	margin: 10px 0px 0px 10px;
+}
+.btnHed {
+	background-color: #a0a0a0;
+	color: black;
+}
+.btnOpt {
+	background-color: #f69906;
+}
+.btnNum {
+	background-color: #313131;
+}
